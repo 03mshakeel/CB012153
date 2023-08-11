@@ -1,0 +1,316 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background: linear-gradient(to right,  #3586ff, #c9d9e7);
+}
+
+#head{
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.pageimg{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./ticketpages.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  background: linear-gradient(to right,  #3586ff, #c9d9e7);
+  color: #fff;
+  padding: 70px 20px 120px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.content{
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px;
+}
+.details-content{
+  position: relative;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-row: 50% 50%;
+}
+
+.main-content {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: .5em;
+  border-radius: 1em;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sum-content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.sum-content {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 700px;
+}
+
+
+
+.btncont{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#nextbtn1{
+  border-radius: 1rem;
+}
+
+#nextbtn{
+  padding: .5em;
+  font-size: 1.2em;
+  border-radius: 1rem;
+  background-color: #cecece;
+  color: #000000;
+}
+
+#nextbtn:hover{
+  background-color: #3487f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+/* validation  */
+.input-cont input:focus {
+  outline: 0;
+}
+
+.input-cont.success input {
+  border-color: #09c372;
+}
+
+.input-cont.error input {
+  border-color: #ff3860;
+}
+
+.input-cont .error {
+  color: #ff3860;
+  font-size: .8em;
+  height: 13px;
+}
+
+
+
+.fields{
+  line-height: 1.5em;
+}
+.fields label{
+  font-size: 1em;
+  font-weight: bold;
+}
+.fields p{
+  font-size: .7em;
+  color: #585858;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fields input, .fields select{
+  width: 24em;
+  height: 3em;
+  padding: 1%;
+}
+
+
+#nav{
+  position: absolute;
+  top: 26%;
+  margin-left: 1em;
+}
+
+li{
+  font-family: poppins;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.navselected{
+  color: #000000;
+  font-weight: bold;
+}
+
+#nextbtn:disabled{
+  background-color: #6380ff; 
+  color: #666;
+  cursor: not-allowed;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+
+  
+}
+.main{
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
+}
+
+
+.main .social_icon,
+.main .footer_menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.main .social_icon li,
+.main .footer_menu li{
+  list-style: none;
+}
+.main .social_icon li img{
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  
+}
+
+.main .social_icon li img:hover{
+  transform: translateY(-10px);
+}
+.main .footer_menu li a{
+  font-size: 1.2em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+.main .footer_menu li a:hover{
+  opacity: 1;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./wave.png);
+  background-size: 1000px 100px ;
+
+}
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 4s linear infinite;
+}
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animatewave_02 4s linear infinite;
+}
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatewave 3s linear infinite;
+}
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animatewave_02 3s linear infinite;
+}
+@keyframes animatewave{
+  0%{
+      background-position-x: 1000px;
+  }
+  100%{
+      background-position-x: 0px;
+  }
+}
+@keyframes animatewave_02{
+  0%{
+      background-position-x: 0px;
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust header styles for smaller screens */
+  #head {
+    font-size: 3rem;
+    left: 20%;
+  }
+
+/* Adjust content layout for smaller screens */
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Adjust grid column layout for smaller screens */
+.content .main-content,
+.content .sum-content {
+  grid-template-columns: 100%;
+}
+
+/* Adjust padding for the main content section */
+.main-content {
+  padding: 1rem 0.5rem;
+}
+
+/* Adjust margin for summary content */
+.sum-content {
+  margin: 10px 5px;
+}
+
+/* Adjust font size of table in summary */
+.sum-content table {
+  font-size: 0.9rem;
+}
+}

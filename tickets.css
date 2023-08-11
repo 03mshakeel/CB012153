@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#hikkaduwa{
+  display: block;
+  top: 2%;
+  left: 1%;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.5s;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  border-radius: .5em;
+}
+
+#hikkaduwa:hover{
+  background-color: #124547;
+  color: rgb(255, 255, 255);  
+  border-radius: .5em;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: linear-gradient(to right,  #3586ff, #c9d9e7);
+}
+
+#head{
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.head{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./ticketpages.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  background: linear-gradient(to right,  #3586ff, #c9d9e7);
+  color: #fff;
+  padding: 70px 0;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+h6{
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+.sum-content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sum-content {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 70em;
+}
+
+.Summary-Table {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Summary-Table th,
+.Summary-Table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.Summary-Table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.btncont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#nextbtn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #5091e6;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+#nextbtn:hover {
+  background-color:  #5091e6;
+}
+
+.calendar {
+  max-width: 300px;
+  margin: auto;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+#nav {
+  margin-top: 70px;
+  text-align: left;
+}
+
+li {
+  display: inline-block;
+  color: #000000;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.navselected {
+  color: #124547;
+}
+
+#nextbtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Styles for the "Guests" section */
+.guests {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.guests h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styles for each ticket category */
+.guest-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Styles for category name and description */
+.guest-name p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.guest-name span {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Styles for ticket count */
+.count {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* Styles for plus and minus buttons */
+.btnmin,
+.btnplus {
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btnmin:hover,
+.btnplus:hover {
+  background-color: #ccc;
+}
+
+.guest-input {
+  display: flex;
+  align-items: center;
+}
+
+.btnmin + .count,
+.count + .btnplus {
+  margin-left: 10px;
+}
+/* footer */
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+
+  
+}
+.main{
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
+}
+
+
+.main .social_icon,
+.main .footer_menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.main .social_icon li,
+.main .footer_menu li{
+  list-style: none;
+}
+.main .social_icon li img{
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  
+}
+
+.main .social_icon li img:hover{
+  transform: translateY(-10px);
+}
+.main .footer_menu li a{
+  font-size: 1.2em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+.main .footer_menu li a:hover{
+  opacity: 1;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./wave.png);
+  background-size: 1000px 100px ;
+
+}
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 4s linear infinite;
+}
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animatewave_02 4s linear infinite;
+}
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatewave 3s linear infinite;
+}
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animatewave_02 3s linear infinite;
+}
+@keyframes animatewave{
+  0%{
+      background-position-x: 1000px;
+  }
+  100%{
+      background-position-x: 0px;
+  }
+}
+@keyframes animatewave_02{
+  0%{
+      background-position-x: 0px;
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust header styles for smaller screens */
+  #head {
+    font-size: 3rem;
+    left: 20%;
+  }
+
+  /* Adjust .guests and other responsive styles */
+  .guests {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  /* Adjust .content layout for smaller screens */
+  .content {
+    flex-direction: column;
+  }
+
+  /* Add other responsive styles as needed */
+}
+

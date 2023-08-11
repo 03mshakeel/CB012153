@@ -6,6 +6,28 @@
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+.btncont {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #nextbtn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #5091e6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #nextbtn:hover {
+    background-color:  #041e3f;
+  }
 body{
     background: linear-gradient(to right, #00093c, #c9d9e7);
 }
