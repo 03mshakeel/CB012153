@@ -160,13 +160,14 @@ window.addEventListener("load" , ()=>{
             break;
           }
         }
-        let count = localStorage.getItem("count");
+        let countSLAdult = localStorage.getItem('countSL Adult')
+
   
-        if (count > 0){
+        if (countSLAdult > 0){
         if (foundRow) {
           // If a row exists, update the charge
-          const charge = '$' + (((normalHoursCount*4)+(peakHoursCount*6))*count);
-          const updatedcategoryName = count + ` <span>SL Adult</span>`;
+          const charge = '$' + (((normalHoursCount*4)+(peakHoursCount*6))*countSLAdult);
+          const updatedcategoryName = countSLAdult + ` <span>SL Adult</span>`;
           foundRow.cells[1].innerText = charge;
           foundRow.cells[0].innerHTML = updatedcategoryName;
       } else {
@@ -175,10 +176,10 @@ window.addEventListener("load" , ()=>{
           const categoryCell = newRow.insertCell(0);
           const chargeCell = newRow.insertCell(1);
           
-          categoryCell.innerHTML = count + ` <span>SL Adult</span>` ;
-          const charge = '$' + ((normalHoursCount*4)+(peakHoursCount*6))*count;
-          const SL_Adult = ((normalHoursCount*4)+(peakHoursCount*6))*count;
-          localStorage.setItem('SL_Adult' , SL_Adult);
+          categoryCell.innerHTML = countSLAdult + ` <span>SL Adult</span>` ;
+          const charge = '$' + ((normalHoursCount*4)+(peakHoursCount*6))*countSLAdult;
+          const SL_Adult = ((normalHoursCount*4)+(peakHoursCount*6))*countSLAdult;
+          localStorage.setItem('SL_Adult' , countSLAdult);
           chargeCell.innerText = charge;
       }
     } else {
@@ -215,13 +216,13 @@ window.addEventListener("load" , ()=>{
           break;
         }
       }
-      let count = localStorage.getItem("count");
+      let countSLChild = localStorage.getItem('countSL Child')
 
-      if (count > 0){
+      if (countSLChild > 0){
       if (foundRow) {
         // If a row exists, update the charge
-        const charge = '$' + (((normalHoursCount*2)+(peakHoursCount*3))*count);
-        const updatedcategoryName = count + ` <span>SL Child</span>`;
+        const charge = '$' + (((normalHoursCount*2)+(peakHoursCount*3))*countSLChild);
+        const updatedcategoryName = countSLChild + ` <span>SL Child</span>`;
         foundRow.cells[1].innerText = charge;
         foundRow.cells[0].innerHTML = updatedcategoryName;
     } else {
@@ -230,9 +231,9 @@ window.addEventListener("load" , ()=>{
         const categoryCell = newRow.insertCell(0);
         const chargeCell = newRow.insertCell(1);
         
-        categoryCell.innerHTML = count + ` <span>SL Child</span>` ;
-        const charge = '$' +  ((normalHoursCount*2)+(peakHoursCount*3))*count;
-        const SL_Child = ((normalHoursCount*4)+(peakHoursCount*6))*count;
+        categoryCell.innerHTML = countSLChild + ` <span>SL Child</span>` ;
+        const charge = '$' +  ((normalHoursCount*2)+(peakHoursCount*3))*countSLChild;
+        const SL_Child = ((normalHoursCount*4)+(peakHoursCount*6))*countSLChild;
         localStorage.setItem('SL_Child' , SL_Child);
         chargeCell.innerText = charge;
     }
@@ -320,13 +321,13 @@ function updatetableFA(){
       break;
     }
   }
-  let count = localStorage.getItem("count");
+  let countForeignerAdult = localStorage.getItem('countForeigner Adult')
 
   if (count > 0){
   if (foundRow) {
     // If a row exists, update the charge
-    const charge = '$' + (((normalHoursCount*10)+(peakHoursCount*13))*count);
-    const updatedcategoryName = count + ` <span>Foreigner Adult</span>`;
+    const charge = '$' + (((normalHoursCount*10)+(peakHoursCount*13))*countForeignerAdult);
+    const updatedcategoryName = countForeignerAdult + ` <span>Foreigner Adult</span>`;
     foundRow.cells[1].innerText = charge;
     foundRow.cells[0].innerHTML = updatedcategoryName;
 } else {
@@ -335,9 +336,9 @@ function updatetableFA(){
     const categoryCell = newRow.insertCell(0);
     const chargeCell = newRow.insertCell(1);
     
-    categoryCell.innerHTML = count + ` <span>Foreigner Adult</span>` ;
-    const charge = '$' + ((normalHoursCount*10)+(peakHoursCount*13))*count;
-    const Foreginer_Adult = ((normalHoursCount*4)+(peakHoursCount*6))*count;
+    categoryCell.innerHTML = countForeignerAdult + ` <span>Foreigner Adult</span>` ;
+    const charge = '$' + ((normalHoursCount*10)+(peakHoursCount*13))*countForeignerAdult;
+    const Foreginer_Adult = ((normalHoursCount*4)+(peakHoursCount*6))*countForeignerAdult;
     localStorage.setItem('Foreginer_Adult' , Foreginer_Adult);
     chargeCell.innerText = charge;
 }
@@ -430,13 +431,13 @@ function updatetableFC(){
     }
   }
   
-  let count = localStorage.getItem("count");
+  let countForeignerChild = localStorage.getItem('countForeigner Child')
   
   if (count > 0){
   if (foundRow) {
     // If a row exists, update the charge
-    const charge = '$' + (((normalHoursCount*5)+(peakHoursCount*8))*count);
-    const updatedcategoryName = count + ` <span>Foreigner Child</span>`;
+    const charge = '$' + (((normalHoursCount*5)+(peakHoursCount*8))*countForeignerChild);
+    const updatedcategoryName = countForeignerChild + ` <span>Foreigner Child</span>`;
     foundRow.cells[1].innerText = charge;
     foundRow.cells[0].innerHTML = updatedcategoryName;
 } else {
@@ -445,9 +446,9 @@ function updatetableFC(){
     const categoryCell = newRow.insertCell(0);
     const chargeCell = newRow.insertCell(1);
     
-    categoryCell.innerHTML = count + ` <span>Foreigner Child</span>` ;
-    const charge = '$' + ((normalHoursCount*5)+(peakHoursCount*8))*count;
-    const Foreginer_Child = ((normalHoursCount*4)+(peakHoursCount*6))*count;
+    categoryCell.innerHTML = countForeignerChild + ` <span>Foreigner Child</span>` ;
+    const charge = '$' + ((normalHoursCount*5)+(peakHoursCount*8))*countForeignerChild;
+    const Foreginer_Child = ((normalHoursCount*4)+(peakHoursCount*6))*countForeignerChild;
     localStorage.setItem('Foreginer_Child' , Foreginer_Child);
     chargeCell.innerText = charge;
 }

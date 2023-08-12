@@ -5,6 +5,10 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+#totalamount{
+  color: green;
+
+}
 #hikkaduwa{
   display: block;
   top: 2%;

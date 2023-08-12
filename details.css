@@ -5,7 +5,10 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+#totalamount{
+  color: green;
 
+}
 body {
   background: linear-gradient(to right,  #3586ff, #c9d9e7);
 }

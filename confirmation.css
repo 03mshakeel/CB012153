@@ -8,6 +8,9 @@
 body{
     background: linear-gradient(to right,  #3586ff, #c9d9e7);
 }
+#totalamount{
+    color: green;
+}
 
 .pageimg{
     width: 100%;
